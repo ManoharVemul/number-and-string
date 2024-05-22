@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h3>
+    <pre>
+    Task:1.create a document of array methods like pop, push, shift, unshift , join and remaining methods
+
+    Task: 2.write a js program to find the sum of natural numbers :
+     input =100
+
+    Task: 3.write a javascript program for given below :
+   
+   input= "ch_ai_ta_ny_a"
+   
+   
+   output : ChAiTaNyA
+</pre>
+</h3>
+   
+   <a href="./ARRAY METHODS.pdf" target="" style="text-decoration: none; color: rgb(226, 43, 153); text-align: center; display: block;">Document of array method</a>
+
+    <script>
+
+       //sum of 100 natural numbers 
+function sumofnatrl(n){
+    return n*(n+1)/2;
+}
+console.log (`sum of 100 natural numbers is : ${sumofnatrl(100)}`)
+// average of 100 natural numbers
+
+function avg(n){
+    return (n+1)/2;
+}
+console.log (`avg of 100 natural numbers is : ${avg(100)}`)
+
+//input = ch_ai_ta_ny_a 
+//output = chAiTaNya
+
+
+
+
+
+// console.log("the input  ===>  ",ss);
+// console.log("the required output  ===>  ",sting)
+
+
+let arr = "ch_ai_ta_ny_a";  //output ChAiTaNyA
+let str ="";
+for (i=0;i<arr.length;i++){
+    if(arr[i]!=="_"){
+    if(i%3==0){
+        
+            str+=arr[i].toUpperCase();
+    }else{
+        str+=arr[i];
+    }
+    }
+}
+console.log(str);
+
+//"ch_ai_ta_ny_a";  //output ChAiTaNyA
+let arr2 = prompt("enter any name hint ==>{ch_ai_ta_ny_a}");
+console.log(arr2);
+
+let str2 ="";
+for (i=0;i<arr2.length;i++){
+    
+    if(i==0){
+       
+        str2+=arr2[i].toUpperCase();
+    }else {
+        
+    
+    if(arr2[i]==="_"){
+        i++
+
+        str2+=arr2[i].toUpperCase();
+    }else{
+        
+        str2+=arr2[i];
+    }
+    }
+}
+
+console.log(`the required output for ${arr2} is : ${str2}`);
+
+    </script>
+</body>
+</html>
